@@ -6,9 +6,8 @@ class Solution:
         def find_permute(candidates, candidate_indexes):
             # stop condition
             if len(candidates) == len(nums):
-                if candidates not in answers:
-                    answers.append(candidates)
-                    return
+                answers.append(candidates)
+                return
                 
             # recursive call
             for i in range(0, len(nums)):
